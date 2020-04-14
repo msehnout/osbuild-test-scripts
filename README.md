@@ -4,6 +4,10 @@ Run tests on ARM:
 ```
 dnf install git vim -y && git clone https://github.com/msehnout/osbuild-test-scripts.git && cd osbuild-test-scripts && bash aarch64-git.sh && bash run-tests.sh
 ```
+Image tests:
+```
+dnf install git vim -y && git clone https://github.com/msehnout/osbuild-test-scripts.git && cd osbuild-test-scripts && bash aarch64-git.sh && bash run-image-tests.sh
+```
 Generate test cases on ARM:
 ```
 dnf install git vim -y && git clone https://github.com/msehnout/osbuild-test-scripts.git && cd osbuild-test-scripts && bash aarch64-regenerate-test-cases.sh
