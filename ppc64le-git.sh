@@ -14,6 +14,9 @@ dnf install rpmbuild/RPMS/ppc64le/* -y
 rm -rf /osbuild
 mkdir -p /osbuild/store
 mkdir -p /osbuild/output
-tools/test-case-generators/generate-test-cases --distro rhel-8 --arch ppc64le --store /osbuild/store/ --output /osbuild/output/
 popd
+popd
+cp qcow2-format-request-map.json /tmp/osbuild-composer/tools/test-case-generators/format-request-map.json
+pushd /tmp/osbuild-composer
+tools/test-case-generators/generate-test-cases --distro rhel-8 --arch ppc64le --store /osbuild/store/ --output /osbuild/output/
 popd
