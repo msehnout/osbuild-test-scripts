@@ -10,7 +10,7 @@ git checkout rhel8-s390x-support
 dnf install go-rpm-macros make '@RPM Development Tools' -y
 dnf builddep osbuild-composer.spec -y
 make rpm
-dnf install rpmbuild/RPMS/ppc64le/* -y
+dnf install rpmbuild/RPMS/s390x/* -y
 rm -rf /osbuild
 mkdir -p /osbuild/store
 mkdir -p /osbuild/output
