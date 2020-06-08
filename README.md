@@ -1,5 +1,9 @@
 # I'm going to eat your computer if you run the scripts
 
+Run on IBM Z:
+```
+dnf install git vim -y && git clone https://github.com/msehnout/osbuild-test-scripts.git && cd osbuild-test-scripts && bash s390x-git.sh
+```
 Run tests on ARM:
 ```
 dnf install git vim -y && git clone https://github.com/msehnout/osbuild-test-scripts.git && cd osbuild-test-scripts && bash aarch64-git.sh && bash run-tests.sh
