@@ -16,4 +16,3 @@ mkdir -p /osbuild/output
 popd
 popd
 
-/usr/libexec/tests/osbuild-composer/osbuild-image-tests
