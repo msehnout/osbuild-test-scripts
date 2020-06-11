@@ -11,7 +11,7 @@ dnf builddep golang-github-osbuild-composer.spec -y
 popd
 popd
 
-mv ppc64le-formats.json /tmp/osbuild-composer/tools/test-case-generators/format-request-map.json
+cp ppc64le-formats.json /tmp/osbuild-composer/tools/test-case-generators/format-request-map.json
 
 pushd /tmp/osbuild-composer
 mkdir -p /osbuild/store || touch /
