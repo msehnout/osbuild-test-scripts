@@ -17,7 +17,7 @@ mkdir -p /osbuild/output || touch /
 
 echo "fedora-32" | while read distro
 do
-  tools/test-case-generators/generate-test-cases --distro $distro --arch x86_64 --store /osbuild/store/ --output /osbuild/output/
+  tools/test-case-generators/generate-test-cases --distro $distro --arch x86_64 --store /osbuild/store/ --output /osbuild/output/ --image-types qcow2
 done
 
 popd
