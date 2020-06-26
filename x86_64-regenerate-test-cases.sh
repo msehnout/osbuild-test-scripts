@@ -18,7 +18,7 @@ mkdir -p /osbuild/output || touch /
 
 echo "fedora-32" | while read distro
 do
-  tools/test-case-generators/generate-test-cases --distro $distro --arch x86_64 --store /osbuild/store/ --output /osbuild/output/ --image-types qcow2 ami openstack vhd vmdk
+  tools/test-case-generators/generate-test-cases --distro $distro --arch x86_64 --store /osbuild/store/ --output /osbuild/output/ --image-types qcow2 ami fedora-iot-commit openstack vhd vmdk
 done
 
 popd
