@@ -2,6 +2,9 @@
 
 set -e
 
+# to get dnf-json in place
+dnf install osbuild-composer -y
+
 pushd /tmp
 rm -rf osbuild-composer
 git clone https://github.com/msehnout/osbuild-composer.git
