@@ -3,7 +3,7 @@
 set -e
 
 systemctl daemon-reload
-systemctl restart osbuild-composer.socket osbuild-rcm.socket
+systemctl restart osbuild-composer.socket 
 
 cd /usr/libexec/osbuild-composer
 for test in /usr/libexec/tests/osbuild-composer/osbuild-image-tests
